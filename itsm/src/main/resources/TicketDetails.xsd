@@ -1,0 +1,47 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="pojo.itsm.eip.aricent.com" targetNamespace="pojo.itsm.eip.aricent.com"
+	elementFormDefault="qualified">
+
+	<xs:element name="getTicketDetailsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"></xs:element>
+				<xs:element name="customerId" type="xs:int"></xs:element>
+				<xs:element name="engagementId" type="xs:int"></xs:element>
+				<xs:element name="reportedIssuetypeId" type="xs:int"></xs:element>
+				<xs:element name="ciId" type="xs:int"></xs:element>
+				<xs:element name="title" type="xs:string"></xs:element>
+				<xs:element name="description" type="xs:string"></xs:element>
+				<xs:element name="priorityId" type="xs:int"></xs:element>
+				<xs:element name="requestor" type="xs:string"></xs:element>
+				<xs:element name="requestorEmail" type="xs:string"></xs:element>
+				<xs:element name="ticketSourceId" type="xs:string"></xs:element>
+				<xs:element name="supportTypeId" type="xs:int"></xs:element>
+				<xs:element name="createdBy" type="xs:string"></xs:element>
+				<xs:element name="urgencyId" type="xs:string"></xs:element>
+				<xs:element name="impactId" type="xs:string"></xs:element>
+				<xs:element name="relatedCiIds" type="tns:relatedCiIds"></xs:element>
+				<xs:element name="faqs" type="tns:faqs"></xs:element>
+				<xs:element name="attachments" type="tns:attachments"></xs:element>
+				<xs:element name="reachedBy" type="xs:string"></xs:element>
+				<xs:element name="ticketCategory" type="xs:string"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:simpleType name="relatedCiIds">
+		<xs:list itemType="xs:int"></xs:list>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="faqs">
+		<xs:list itemType="xs:string"></xs:list>
+	</xs:simpleType>
+	
+
+	<xs:simpleType name="attachments">
+		<xs:list itemType="xs:string"></xs:list>
+	</xs:simpleType>	
+	
+</xs:schema>

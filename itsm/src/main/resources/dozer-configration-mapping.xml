@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+
+	<mapping>
+		<class-a>com.aricent.eip.itsm.domains.TicketDetailsITSM</class-a>
+		<class-b>com.aricent.eip.itsm.domains.TicketDetailsServiceNow</class-b>
+		<field>
+			<a>customerId</a>
+			<b>caller_id</b>
+		</field>
+		<field>
+			<a>title</a>
+			<b>short_description</b>
+		</field>
+		<field>
+			<a>description</a>
+			<b>description</b>
+		</field>
+		<field>
+			<a>reportedIssuetypeId</a>
+			<b>category</b>
+		</field>
+		<field>
+			<a>priorityId</a>
+			<b>priority</b>
+		</field>
+		<field>
+			<a>impactId</a>
+			<b>u_affected_user</b>
+		</field>
+	</mapping>
+</mappings>
